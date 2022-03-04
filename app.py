@@ -34,7 +34,7 @@ if uploaded_file:
 
     # Sketch Image
     sketch_img = cv2.divide(grey_img, invblur_img, scale=256.0)
-    st.image(sketch_img)
+    st.image(sketch_img, width=300)
 
     # Save Sketch
     cv2.imwrite('sketch.png', sketch_img)
